@@ -2,53 +2,44 @@
   "manifest_version": 3,
   "name": "DYDownloader",
   "version": "1.0.0",
-  "action": {
-
-  },
+  "version_name": "1.0 beta",
   "description": "抖音视频相册嗅探下载",
   "icons": {
-
+    "16": "icon/dangan.png",
+    "32": "icon/dangan.png",
+    "48": "icon/dangan.png",
+    "128": "icon/dangan.png"
   },
   "author": "duanzhangplus@gmail.com",
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
-  {
-    "matches": ["https://*.douyin.com/*"],
-    "js": ["scripts/content-script.js"]
-  }
-],
+    {
+      "matches": [
+        "https://*.douyin.com/*"
+      ],
+      "js": [
+        "scripts/content-script.js"
+      ]
+    }
+  ],
   "declarative_net_request": {
-    "rule_resources" : [{
-      "id": "ruleset",
-      "enabled": true,
-      "path": "rules.json"
-    }]
+    "rule_resources": [
+      {
+        "id": "ruleset",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
   },
   "devtools_page": "devtools.html",
-  "homepage_url": "https://path/to/homepage",
-  "host_permissions": [...],
-  "import": [{...}],
-  "incognito": "spanning, split, or not_allowed",
-  "input_components": [{...}],
-  "key": "publicKey",
-  "minimum_chrome_version": "107",
-  "nacl_modules": [...],
-  "oauth2": {...},
-  "omnibox": {...},
-  "optional_host_permissions": ["..."],
-  "optional_permissions": ["..."],
-  "options_page": "options.html",
-  "options_ui": {...},
-  "permissions": ["declarativeNetRequest","declarativeNetRequestWithHostAccess","declarativeNetRequestFeedback","fileSystemProvider"],
-  "replacement_web_app": "https://example.com",
-  "requirements": {...},
-  "sandbox": {...},
+  "homepage_url": "https://github.com/dzplus/dydownloader.git",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback"
+  ],
   "short_name": "Short Name",
-  "storage": {...},
-  "tts_engine": {...},
-  "update_url": "https://path/to/updateInfo.xml",
-  "version_name": "1.0 beta",
-  "web_accessible_resources": [...]
+  "update_url": "https://path/to/updateInfo.xml"
 }
