@@ -10,6 +10,15 @@
     "48": "icon/dangan.png",
     "128": "icon/dangan.png"
   },
+  "action": {
+    "default_icon": {
+      "16": "icon/dangan.png",
+      "32": "icon/dangan.png",
+      "48": "icon/dangan.png"
+    },
+    "default_title": "DYScanner",
+    "default_popup": "popup.html"
+  },
   "author": "duanzhangplus@gmail.com",
   "background": {
     "service_worker": "background.js"
@@ -20,6 +29,7 @@
         "https://*.douyin.com/*"
       ],
       "js": [
+        "js/thirdParty/jquery.min.js",
         "scripts/content-script.js"
       ]
     }
@@ -41,5 +51,5 @@
     "declarativeNetRequestFeedback"
   ],
   "short_name": "Short Name",
-  "update_url": "https://path/to/updateInfo.xml"
+  "update_url": "https://github.com/dzplus/dydownloader.git"
 }
