@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style type="text/css">
+        .popup-div {
+            width: 340px;
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <div class="popup-div">
+        <div class="container" id="content">
+            <HR>
+            <div>
+                <div class="btn-group">
+                    <button id="btn_skipPay" class="btn btn-outline-secondary" type="button">跳过运单支付
+                    </button>
+                    <button id="btn_rollBack" class="btn btn-outline-secondary" type="button">回滚确认费用状态
+                    </button>
+                </div>
+                <HR>
+                <div class="btn-group">
+                    <button id="btn_bindCarrier" class="btn btn-outline-secondary" type="button">分配承运商给我
+                    </button>
+                    <button id="btn_confirmOrder" class="btn btn-outline-secondary" type="button">确认接单
+                    </button>
+                </div>
+                <HR>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button id="btn_inspect" type="button" class="btn btn-outline-secondary">补全验车照片等信息</button>
+                    <button id="btn_download" type="button" class="btn btn-outline-secondary">下载验车照片</button>
+                </div>
+                <HR>
+                <div class="btn-group">
+                    <button id="btn_setTransportCar" class="btn btn-outline-secondary" type="button">填补运输车信息
+                    </button>
+                    <button id="btn_setPicker" class="btn btn-outline-secondary" type="button">填补提车人信息
+                    </button>
+                </div>
+                <div id="message"></div>
+                <HR>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/thirdParty/jquery.min.js"></script>
+<script type="text/javascript" src="js/thirdParty/popup.js"></script>
+</body>
+</html>

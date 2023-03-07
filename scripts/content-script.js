@@ -5,9 +5,10 @@ $(function () {
     $("#rpcDownload").bind("click", function () {
         //查询本页面的视频节点 并获取视频号
         $(".Eie04v01").each(function (index, element) {
+            //每个视频旁边都添加一个按钮
             $(this).find("a").attr("href", function (i, origValue) {
-                console.log(origValue);
-                var concat = "https://rssdownload.duanzhang.life/api/downloadById?id=".concat(origValue);
+                var concat = "https://rssdownload.duanzhang.life:5555/api/downloadById.json?id=".concat(origValue);
+                console.log(concat);
                 fetch(concat)
                     .then(function (response) {
                         if (response.status !== 200) {

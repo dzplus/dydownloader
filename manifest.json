@@ -51,5 +51,11 @@
     "declarativeNetRequestFeedback"
   ],
   "short_name": "Short Name",
-  "update_url": "https://github.com/dzplus/dydownloader.git"
+  "update_url": "https://github.com/dzplus/dydownloader.git",
+  "cross_origin_opener_policy": {
+    "value": "same-origin"
+  },
+  "cross_origin_embedder_policy": {
+    "value": "require-corp"
+  }
 }
